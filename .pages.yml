@@ -1,0 +1,52 @@
+media:
+  input: site/assets/uploads
+  output: /assets/uploads
+  rename: random
+  extensions: [jpg, jpeg, png, webp, gif, pdf]
+content:
+  - name: posts
+    label: 活動ブログ
+    type: collection
+    path: content/posts
+    format: json
+    filename:
+      template: "{year}{month}{day}-{hour}{minute}{second}.json"
+      field: false
+    view:
+      primary: title
+      fields: [title, date, published]
+      sort: date
+      order: desc
+    fields:
+      - name: title
+        label: タイトル
+        type: string
+        required: true
+      - name: date
+        label: 記事の日付
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: published
+        label: 公開する
+        description: オフにして保存すると下書きになります。下書きも公開リポジトリに保存され、GitHub上で閲覧可能です。個人情報や相談内容は記入しないでください。
+        type: boolean
+        default: false
+      - name: category
+        label: 分類
+        type: select
+        default: 活動報告
+        options:
+          values: [活動報告, 地域の活動, 議会報告, お知らせ]
+      - name: image
+        label: 一覧に表示する写真
+        type: image
+      - name: body
+        label: 本文
+        type: rich-text
+        required: true
+        options:
+          format: html
+          switcher: false
+          extensions: [jpg, jpeg, png, webp, gif]
