@@ -16,6 +16,8 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
+      - name: 公開処理の動作確認
+        run: python scripts/test_build.py
       - name: 記事とサイトを生成
         run: python scripts/build.py
       - uses: actions/configure-pages@v5
