@@ -25,3 +25,16 @@
 .term-explanation{background:#f3f5f1;border-left:3px solid #a4b6a7;padding:15px 16px;margin:12px 0 22px}.term-explanation h4,.result-action-title{font-size:13px;font-weight:600;margin:0 0 8px;line-height:1.8}.term-explanation p{margin:0}.result-action-title{margin-top:18px}.result-display-date{font-size:11px!important;color:var(--muted);margin:8px 0 0;line-height:1.6}.detail-reference{display:inline-block;font-size:11px;color:var(--pink);border-bottom:1px solid #cda1b1;margin:6px 0;line-height:1.7}
 
 .hero .pop-copy{font-family:'Hiragino Kaku Gothic ProN','Yu Gothic',sans-serif;font-weight:700;font-size:52px;line-height:1.2;letter-spacing:.03em;margin:8px 0 28px}.pop-copy .copy-row{display:flex;align-items:center;gap:14px;margin-bottom:25px}.pop-copy .copy-row:last-child{margin-bottom:0}.pop-copy .copy-mark{position:relative;display:inline-flex;align-items:center;justify-content:center;flex:0 0 78px;width:78px;height:78px;border:3px solid #b63d6b;border-radius:50%;background:#b63d6b;color:white;font-size:54px;line-height:1;box-shadow:5px 5px 0 #f1dce4;letter-spacing:0}.pop-copy .copy-rest{color:var(--ink)}.pop-copy .copy-reading{position:absolute;top:-19px;left:50%;transform:translateX(-50%);font-size:15px;font-weight:700;line-height:1;color:#a6325e;background:#fff7fa;padding:2px 9px;border-radius:9px;letter-spacing:.08em}.pop-copy .copy-row:nth-child(2) .copy-mark{background:white;color:#b63d6b}.pop-copy .copy-row:nth-child(3) .copy-mark{background:#b63d6b}@media(max-width:1000px){.hero .pop-copy{font-size:44px}.pop-copy .copy-mark{width:68px;height:68px;flex-basis:68px;font-size:46px}}@media(max-width:720px){.hero .pop-copy{font-size:34px;letter-spacing:.01em;margin-top:10px;margin-bottom:28px}.pop-copy .copy-row{gap:12px;margin-bottom:24px}.pop-copy .copy-mark{width:62px;height:62px;flex-basis:62px;font-size:42px;border-width:2px;box-shadow:4px 4px 0 #f1dce4}.pop-copy .copy-reading{font-size:14px;top:-18px;padding:2px 8px}}
+
+/* Policy and achievement reading text */
+.policies p,
+.section-desc,
+.category-description,
+.results article > p:not(.result-display-date),
+.results .result-detail p:not(.result-date) {
+  font-size: 1rem;
+  line-height: 1.85;
+}
+.policies summary, .result-detail summary { font-size: .9375rem; }
+.council-shortcut { display: block; width: fit-content; margin-top: 14px; }
+#council { scroll-margin-top: 110px; }
