@@ -38,3 +38,14 @@
 .policies summary, .result-detail summary { font-size: .9375rem; }
 .council-shortcut { display: block; width: fit-content; margin-top: 14px; }
 #council { scroll-margin-top: 110px; }
+
+.activity-photos.activity-gallery { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.activity-gallery img { aspect-ratio: 4 / 3; width: 100%; height: auto; object-fit: cover; object-position: center 46%; }
+.activity-gallery figcaption { font-size: .9375rem; }
+.record > .council-intro { width: 100%; display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); align-items: center; gap: 24px; }
+.council-intro img { display: block; width: 100%; aspect-ratio: 16 / 9; object-fit: cover; object-position: center 60%; border-radius: 8px; }
+.council-intro p { font-size: 1rem; line-height: 1.75; }
+@media (max-width: 640px) {
+  .activity-photos.activity-gallery, .record > .council-intro { grid-template-columns: minmax(0, 1fr); }
+  .record > .council-intro { gap: 16px; }
+}
