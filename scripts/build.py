@@ -82,6 +82,7 @@ def build():
     (OUT/'index.html').write_text(home)
     urls=['/','/blog/','/achievements/']+[p['url'] for p in posts]
     (OUT/'sitemap.xml').write_text('<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+''.join(f'<url><loc>{SITE_URL}{url}</loc></url>' for url in urls)+'</urlset>')
+    (OUT/'sitemap.txt').write_text(''.join(f'{SITE_URL}{url}\n' for url in urls), encoding='utf-8')
     (OUT/'robots.txt').write_text(f'User-agent: *\nAllow: /\nDisallow: /editor/\nSitemap: {SITE_URL}/sitemap.xml\n')
     (OUT/'.nojekyll').touch()
     print(f'Built {len(posts)} published articles; output: {OUT}')
