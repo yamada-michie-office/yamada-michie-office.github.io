@@ -54,3 +54,8 @@
 }
 
 .message-player{min-width:0}.message-player p{margin:0 0 .65rem}.message-player video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#30252c;border-radius:10px}
+
+/* Give the message video its own row on wide screens. */
+.values:has(.message-player){grid-template-columns:minmax(0,1fr);gap:32px}
+.values:has(.message-player) .values-video{width:100%;max-width:960px;margin-inline:auto}
+.values:has(.message-player) .values-message{width:100%;max-width:960px;margin-inline:auto}
