@@ -52,3 +52,5 @@
   .record > .council-intro { grid-template-columns: minmax(0, 1fr); }
   .record > .council-intro { gap: 16px; }
 }
+
+.message-player{min-width:0}.message-player p{margin:0 0 .65rem}.message-player video{display:block;width:100%;height:auto;aspect-ratio:16/9;background:#30252c;border-radius:10px}
