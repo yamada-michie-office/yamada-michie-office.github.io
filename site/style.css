@@ -59,3 +59,5 @@
 .values:has(.message-player){grid-template-columns:minmax(0,1fr);gap:32px}
 .values:has(.message-player) .values-video{width:100%;max-width:960px;margin-inline:auto}
 .values:has(.message-player) .values-message{width:100%;max-width:960px;margin-inline:auto}
+
+.hero-action-buttons{display:flex;flex-wrap:wrap;gap:12px;align-items:stretch}.hero-action-buttons .button{display:inline-flex;align-items:center;justify-content:space-between;gap:14px;min-width:175px;box-sizing:border-box}@media(max-width:480px){.hero-action-buttons{gap:10px}.hero-action-buttons .button{flex:1 1 0;min-width:0;padding:14px 12px;font-size:14px;gap:6px}}
